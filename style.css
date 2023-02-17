@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #6c8bff73;
+}
+
+#container {
+  background-color: aqua;
+  width: 55vw;
+  margin: 1rem auto;
+  padding-bottom: 1rem;
+}
+
+h1 {
+  width: fit-content;
+  margin: auto;
+  padding: 1rem 0;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+#input-title {
+  display: block;
+  margin: 0.5rem auto;
+  width: 30vw;
+  padding: 1rem;
+  background: transparent;
+  border-radius: 10px;
+}
+#input-title:focus {
+  outline: none;
+}
+#input-text:focus {
+  outline: none;
+}
+
+#input-text {
+  display: block;
+  margin: 0.5rem auto;
+  width: 38vw;
+  height: 6vh;
+  padding: 1rem;
+  background: transparent;
+  border-radius: 10px;
+  text-align: justify;
+}
+
+.input-submit {
+  width: 60%;
+  display: block;
+  margin: auto;
+  padding: 0.3rem;
+  background-color: rgb(70 255 178 / 82%);
+  border-radius: 10px;
+  color: red;
+}
+
+#input-submit {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.input-submit:hover {
+  background-color: transparent;
+  color: black;
+}
+
+#showed-text {
+  padding: 1rem;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-column-gap: 1rem;
+  margin: 0.5rem 0.5rem;
+  padding: 1.5rem;
+}
+
+#showed-todo {
+  background-color: antiquewhite;
+  padding: 1rem;
+  margin: 1rem auto;
+  width: 70%;
+  border-radius: 10px;
+}
+
+.grid-item {
+  margin: 0.5rem;
+}
+
+h3 {
+  padding: 0 12px;
+}
+
+@media only screen and (max-width: 845px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto;
+  }
+}
